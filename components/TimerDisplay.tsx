@@ -8,7 +8,7 @@ interface TimerDisplayProps {
 
 export const TimerDisplay: React.FC<TimerDisplayProps> = ({ elapsedSeconds, isRunning }) => {
   return (
-    <div className={`text-6xl sm:text-8xl md:text-9xl font-mono tabular-nums tracking-tighter select-none transition-colors duration-500 ${isRunning ? 'text-zinc-100' : 'text-zinc-600'}`}>
+    <div className={`text-6xl sm:text-8xl md:text-9xl font-mono tabular-nums tracking-tighter select-none transition-colors duration-500 ${isRunning ? 'text-zinc-300' : 'text-zinc-500'}`}>
       {formatTime(elapsedSeconds)}
     </div>
   );

@@ -108,7 +108,7 @@ const App: React.FC = () => {
             <div className="flex flex-col items-center gap-2 mb-16 text-center">
               <h2 className="text-zinc-500 text-sm uppercase tracking-widest">Studying</h2>
               <h1 className="text-3xl md:text-4xl text-zinc-100 font-light tracking-tight">{session.subject}</h1>
-              <span className="text-zinc-600 text-xs mt-2 font-mono">
+              <span className="text-zinc-500 text-lg mt-2 font-mono">
                 Target: {session.targetHours}h
               </span>
             </div>
@@ -142,7 +142,7 @@ const App: React.FC = () => {
 
             {/* Progress Bar - Sticky/Fixed at bottom of container or inline */}
             <div className="w-full max-w-lg space-y-2">
-              <div className="flex justify-between text-xs text-zinc-600 font-mono uppercase tracking-wider">
+              <div className="flex justify-between text-xs text-zinc-300 font-mono uppercase tracking-wider">
                 <span>Progress</span>
                 <span>{Math.floor(progressPercentage)}%</span>
               </div>
@@ -154,8 +154,8 @@ const App: React.FC = () => {
       </div>
 
       {/* Footer / Copyright - very subtle */}
-      <div className="absolute bottom-4 text-center w-full z-10 pointer-events-none opacity-20 hover:opacity-50 transition-opacity">
-        <p className="text-[10px] text-zinc-500 font-mono">FOCUS // V1.0</p>
+      <div className="absolute bottom-4 text-center w-full z-10 pointer-events-none hover:opacity-50 transition-opacity">
+        <p className="text-[15px] text-zinc-400 font-mono">FOCUS V1.0</p>
       </div>
     </div>
   );
