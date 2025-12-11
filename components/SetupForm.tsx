@@ -20,7 +20,7 @@ export const SetupForm: React.FC<SetupFormProps> = ({ onStart }) => {
   return (
     <div className="flex flex-col items-center justify-center w-full max-w-md mx-auto fade-in">
       <h1 className="text-2xl font-light text-zinc-300 mb-12 tracking-tight">New Session</h1>
-      
+
       <form onSubmit={handleSubmit} className="w-full space-y-8">
         <div className="group relative">
           <input
@@ -33,8 +33,8 @@ export const SetupForm: React.FC<SetupFormProps> = ({ onStart }) => {
             autoComplete="off"
             autoFocus
           />
-          <label 
-            htmlFor="subject" 
+          <label
+            htmlFor="subject"
             className="absolute -top-4 left-1/2 -translate-x-1/2 text-xs text-zinc-300 uppercase tracking-widest pointer-events-none transition-all group-focus-within:text-zinc-400"
           >
             Subject
@@ -52,8 +52,8 @@ export const SetupForm: React.FC<SetupFormProps> = ({ onStart }) => {
             min="0.5"
             step="0.5"
           />
-          <label 
-            htmlFor="hours" 
+          <label
+            htmlFor="hours"
             className="absolute -top-4 left-1/2 -translate-x-1/2 text-xs text-zinc-300 uppercase tracking-widest pointer-events-none transition-all group-focus-within:text-zinc-400"
           >
             Target Hours
@@ -61,8 +61,8 @@ export const SetupForm: React.FC<SetupFormProps> = ({ onStart }) => {
         </div>
 
         <div className="pt-8 flex justify-center">
-          <Button 
-            type="submit" 
+          <Button
+            type="submit"
             disabled={!subject || !hours}
             size="lg"
             className="flex items-center gap-2 pl-6 pr-4 group"

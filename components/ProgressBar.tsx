@@ -10,7 +10,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({ progress }) => {
 
   return (
     <div className="w-full h-1 bg-zinc-900 overflow-hidden relative mt-8">
-      <div 
+      <div
         className="h-full bg-zinc-200 transition-all duration-500 ease-out"
         style={{ width: `${visualProgress}%` }}
       />
